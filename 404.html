@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script async>
+    let url = "https://17ubqk48yd.execute-api.eu-north-1.amazonaws.com/default/BadLang?" + location.path.replaceAll("/", "+");
+    let resp = await fetch(url);
+    let data = await resp.json();
+    document.body.innerText = data;
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
