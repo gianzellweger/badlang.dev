@@ -4,7 +4,7 @@
 <head>
   <script>
     async function f() {
-      let url = "https://17ubqk48yd.execute-api.eu-north-1.amazonaws.com/default/BadLang?" + location.path.replaceAll("/", "+");
+      let url = "https://17ubqk48yd.execute-api.eu-north-1.amazonaws.com/default/BadLang?" + location.pathname.replaceAll("/", "+");
       let resp = await fetch(url);
       let data = await resp.json();
       document.body.innerText = data;
